@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0d12">
+<meta name="description" content="مستشارك التقني لاختيار أفضل كمبيوتر أو لابتوب حسب ميزانيتك واحتياجاتك.">
+<title>PC Advisor | مستشارك التقني</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+
+<header class="navbar">
+<a class="brand" href="#" aria-label="PC Advisor Home">
+<span class="brand-icon">P<span>C</span></span>
+<span class="brand-name">PC<span>Advisor</span></span>
+</a>
+
+<nav class="nav-links">
+  <a href="#home" data-i18n="navHome">الرئيسية</a>
+  <a href="#advisor" data-i18n="navAdvisor">المستشار</a>
+  <a href="#how-it-works" data-i18n="navHow">كيف يعمل؟</a>
+</nav>
+
+<div class="nav-actions">
+  <button class="icon-button" id="languageToggle" type="button" aria-label="Change language">
+    <span>EN</span>
+  </button>
+
+  <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">
+    <span id="themeIcon">☀</span>
+  </button>
+
+  <a class="nav-cta" href="#advisor" data-i18n="navStart">ابدأ الآن <span>↗</span></a>
+</div>
+
+
+</header>
+
+<main>
+<section class="hero section-container" id="home">
+<div class="hero-content">
+<div class="eyebrow">
+<span class="status-dot"></span>
+<span data-i18n="heroBadge">مستشارك التقني الشخصي</span>
+</div>
+
+    <h1 data-i18n="heroTitle">
+      جهازك المثالي،<br>
+      <span class="gradient-text">يبدأ من هنا.</span>
+    </h1>
+
+    <p class="hero-description" data-i18n="heroDescription">
+      محتار تختار بي سي أو لابتوب؟ حدد ميزانيتك واستخدامك وخلي علينا نساعدك تختار المواصفات الأنسب إلك.
+    </p>
+
+    <div class="hero-actions">
+      <a class="primary-button" href="#advisor">
+        <span data-i18n="heroButton">اكتشف جهازك المثالي</span>
+        <span class="button-arrow">↗</span>
+      </a>
+      <a class="text-button" href="#how-it-works" data-i18n="heroSecondary">
+        اكتشف كيف يعمل
+      </a>
+    </div>
+
+    <div class="hero-trust">
+      <div class="trust-avatars">
+        <span>PC</span>
+        <span>AI</span>
+        <span>⚡</span>
+      </div>
+      <div>
+        <strong data-i18n="trustTitle">قرار شراء أذكى</strong>
+        <p data-i18n="trustDescription">مواصفات تناسب احتياجك وميزانيتك</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="visual-glow"></div>
+
+    <div class="floating-card floating-card-top">
+      <span class="floating-icon purple">✦</span>
+      <div>
+        <strong data-i18n="floatingAiTitle">اختيار ذكي</strong>
+        <small data-i18n="floatingAiDescription">حسب احتياجاتك</small>
+      </div>
+    </div>
+
+    <div class="device-scene">
+      <div class="device-orbit orbit-one"></div>
+      <div class="device-orbit orbit-two"></div>
+
+      <div class="laptop">
+        <div class="laptop-screen">
+          <div class="screen-topbar">
+            <span></span><span></span><span></span>
+            <small>PC ADVISOR</small>
+          </div>
+
+          <div class="screen-content">
+            <span class="screen-label" data-i18n="screenLabel">أداء بلا حدود</span>
+            <h3>YOUR<br><span>NEXT LEVEL.</span></h3>
+            <div class="screen-stats">
+              <div><strong>RTX</strong><small>GRAPHICS</small></div>
+              <div><strong>DDR5</strong><small>MEMORY</small></div>
+            </div>
+            <div class="screen-line"></div>
+          </div>
+          <div class="screen-light"></div>
+        </div>
+        <div class="laptop-base">
+          <div class="laptop-notch"></div>
+        </div>
+      </div>
+
+      <div class="floating-chip chip-one">⚡ Performance</div>
+      <div class="floating-chip chip-two">◈ Smart choice</div>
+    </div>
+
+    <div class="floating-card floating-card-bottom">
+      <span class="floating-icon green">✓</span>
+      <div>
+        <strong data-i18n="floatingBudgetTitle">ميزانيتك أولاً</strong>
+        <small data-i18n="floatingBudgetDescription">أفضل قيمة مقابل السعر</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bottom-label">
+    <span>01</span>
+    <span class="bottom-line"></span>
+    <span data-i18n="heroBottom">ابحث عن الجهاز المناسب لك</span>
+  </div>
+</section>
+
+<section class="advisor-section section-container" id="advisor">
+  <div class="section-heading">
+    <div class="eyebrow">
+      <span class="status-dot"></span>
+      <span data-i18n="advisorBadge">التوصية المخصصة</span>
+    </div>
+
+    <h2 data-i18n="advisorTitle">خلينا نختار <span class="gradient-text">جهازك القادم.</span></h2>
+    <p data-i18n="advisorDescription">
+      جاوب على كم سؤال بسيط، وراح نحدد لك المواصفات المناسبة حسب احتياجك.
+    </p>
+  </div>
+
+  <div class="advisor-layout">
+    <form class="advisor-form" id="advisorForm">
+      <div class="form-header">
+        <div>
+          <span class="step-label" data-i18n="stepLabel">خطوة 01 — معلوماتك</span>
+          <h3 data-i18n="formTitle">شنو تحتاج بالضبط؟</h3>
+        </div>
+        <span class="form-sparkle">✳</span>
+      </div>
+
+      <div class="form-group">
+        <label for="budget" data-i18n="budgetLabel">ميزانيتك</label>
+        <div class="budget-input-wrap">
+          <input
+            id="budget"
+            name="budget"
+            type="number"
+            min="1"
+            max="100000000"
+            placeholder="مثلاً: 1000000"
+            required
+          >
+          <span id="currencyLabel">د.ع</span>
+        </div>
+        <small class="field-hint" data-i18n="budgetHint">أدخل ميزانيتك بالعملة التي تختارها.</small>
+      </div>
+
+      <div class="form-group">
+        <label data-i18n="currencyLabel">العملة</label>
+        <div class="select-grid currency-grid">
+          <label class="choice-card currency-choice selected">
+            <input type="radio" name="currency" value="IQD" checked>
+            <span class="choice-icon">د.ع</span>
+            <span class="choice-text">
+              <strong data-i18n="currencyIQD">دينار عراقي</strong>
+              <small>IQD</small>
+            </span>
+            <span class="choice-check">✓</span>
+          </label>
+
+          <label class="choice-card currency-choice">
+            <input type="radio" name="currency" value="USD">
+            <span class="choice-icon">$</span>
+            <span class="choice-text">
+              <strong data-i18n="currencyUSD">دولار أمريكي</strong>
+              <small>USD</small>
+            </span>
+            <span class="choice-check">✓</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label data-i18n="deviceLabel">نوع الجهاز</label>
+        <div class="select-grid">
+          <label class="choice-card device-choice selected">
+            <input type="radio" name="device" value="pc" checked>
+            <span class="choice-icon">▣</span>
+            <span class="choice-text">
+              <strong data-i18n="devicePC">كمبيوتر مكتبي</strong>
+              <small data-i18n="devicePCDesc">أداء أعلى وقابلية تطوير</small>
+            </span>
+            <span class="choice-check">✓</span>
+          </label>
+
+          <label class="choice-card device-choice">
+            <input type="radio" name="device" value="laptop">
+            <span class="choice-icon">▱</span>
+            <span class="choice-text">
+              <strong data-i18n="deviceLaptop">لابتوب</strong>
+              <small data-i18n="deviceLaptopDesc">قابل للحمل والتنقل</small>
+            </span>
+            <span class="choice-check">✓</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label data-i18n="usageLabel">الاستخدام الرئيسي</label>
+        <div class="usage-grid">
+          <label class="usage-card selected">
+            <input type="radio" name="usage" value="gaming" checked>
+            <span class="usage-icon">⌘</span>
+            <strong data-i18n="usageGaming">ألعاب</strong>
+            <small data-i18n="usageGamingDesc">Gaming</small>
+          </label>
+
+          <label class="usage-card">
+            <input type="radio" name="usage" value="editing">
+            <span class="usage-icon">◩</span>
+            <strong data-i18n="usageEditing">مونتاج وتصميم</strong>
+            <small data-i18n="usageEditingDesc">Creative</small>
+          </label>
+
+          <label class="usage-card">
+            <input type="radio" name="usage" value="study">
+            <span class="usage-icon">⌑</span>
+            <strong data-i18n="usageStudy">دراسة وبرمجة</strong>
+            <small data-i18n="usageStudyDesc">Study & Code</small>
+          </label>
+
+          <label class="usage-card">
+            <input type="radio" name="usage" value="office">
+            <span class="usage-icon">▤</span>
+            <strong data-i18n="usageOffice">استخدام يومي</strong>
+            <small data-i18n="usageOfficeDesc">Everyday</small>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="priority" data-i18n="priorityLabel">شنو أهم شي عندك؟</label>
+        <select id="priority" name="priority">
+          <option value="performance" data-i18n="priorityPerformance">أعلى أداء ممكن</option>
+          <option value="value" data-i18n="priorityValue">أفضل قيمة مقابل السعر</option>
+          <option value="upgrade" data-i18n="priorityUpgrade">قابلية التطوير مستقبلاً</option>
+          <option value="portable" data-i18n="priorityPortable">البطارية وسهولة التنقل</option>
+          <option value="quiet" data-i18n="priorityQuiet">هدوء واستهلاك أقل للطاقة</option>
+        </select>
+      </div>
+
+      <button class="primary-button submit-button" type="submit">
+        <span data-i18n="submitButton">حلّل احتياجي واختر جهازي</span>
+        <span class="button-arrow">↗</span>
+      </button>
+
+      <p class="form-disclaimer" data-i18n="formDisclaimer">
+        توصيات مبدئية مبنية على ميزانيتك واحتياجك، وليست فحصاً للأسعار المباشرة.
+      </p>
+    </form>
+
+    <aside class="results-panel" id="resultsPanel" aria-live="polite">
+      <div class="results-placeholder" id="resultsPlaceholder">
+        <div class="placeholder-art">
+          <div class="placeholder-ring ring-one"></div>
+          <div class="placeholder-ring ring-two"></div>
+          <div class="placeholder-device">▱</div>
+          <span class="placeholder-sparkle sparkle-one">✦</span>
+          <span class="placeholder-sparkle sparkle-two">✧</span>
+        </div>
+
+        <span class="result-kicker" data-i18n="resultKicker">نتيجتك بانتظارك</span>
+        <h3 data-i18n="resultTitle">جهازك المثالي<br>على بُعد خطوة.</h3>
+        <p data-i18n="resultDescription">
+          أدخل ميزانيتك واختياراتك، وخلي المستشار يساعدك تعرف المواصفات الأنسب لك.
+        </p>
+
+        <div class="placeholder-features">
+          <span><i>✓</i><span data-i18n="featureSpecs">مواصفات مقترحة</span></span>
+          <span><i>✓</i><span data-i18n="featureBudget">مراعاة الميزانية</span></span>
+          <span><i>✓</i><span data-i18n="featureUpgrade">نصائح للتطوير</span></span>
+        </div>
+      </div>
+
+      <div class="results-content" id="resultsContent" hidden>
+        <div id="recommendationOutput"></div>
+        <button class="secondary-button" id="resetButton" type="button">
+          <span data-i18n="resetButton">جرّب ميزانية ثانية</span>
+          <span>↻</span>
+        </button>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="how-section section-container" id="how-it-works">
+  <div class="section-heading">
+    <div class="eyebrow">
+      <span class="status-dot"></span>
+      <span data-i18n="howBadge">بكل بساطة</span>
+    </div>
+    <h2 data-i18n="howTitle">ثلاث خطوات، <span class="gradient-text">واختيار أذكى.</span></h2>
+    <p data-i18n="howDescription">ما تحتاج تكون خبير هاردوير حتى تختار جهاز يناسبك.</p>
+  </div>
+
+  <div class="steps-grid">
+    <article class="step-card">
+      <span class="step-number">01</span>
+      <div class="step-icon">◉</div>
+      <h3 data-i18n="howStep1Title">حدد ميزانيتك</h3>
+      <p data-i18n="howStep1Desc">اكتب المبلغ اللي تريد تخصصه لجهازك الجديد.</p>
+      <span class="step-decoration">↗</span>
+    </article>
+
+    <article class="step-card">
+      <span class="step-number">02</span>
+      <div class="step-icon">⌘</div>
+      <h3 data-i18n="howStep2Title">اختر استخدامك</h3>
+      <p data-i18n="howStep2Desc">ألعاب، مونتاج، دراسة أو استخدام يومي.</p>
+      <span class="step-decoration">↗</span>
+    </article>
+
+    <article class="step-card">
+      <span class="step-number">03</span>
+      <div class="step-icon">✳</div>
+      <h3 data-i18n="howStep3Title">احصل على توصيتك</h3>
+      <p data-i18n="howStep3Desc">تعرف على المواصفات المقترحة والنصائح المناسبة لك.</p>
+      <span class="step-decoration">↗</span>
+    </article>
+  </div>
+</section>
+
+<section class="bottom-cta section-container">
+  <div class="bottom-cta-content">
+    <span class="eyebrow" data-i18n="ctaBadge">خطوتك القادمة تبدأ هنا</span>
+    <h2 data-i18n="ctaTitle">لا تدفع أكثر من حاجتك.</h2>
+    <p data-i18n="ctaDescription">اختيار صحيح اليوم، تجربة أفضل كل يوم.</p>
+  </div>
+  <a href="#advisor" class="primary-button">
+    <span data-i18n="ctaButton">ابدأ اختيارك</span>
+    <span class="button-arrow">↗</span>
+  </a>
+  <div class="cta-decoration">PC<span>.</span></div>
+</section>
+
+
+</main>
+
+<footer class="footer section-container">
+<a class="brand footer-brand" href="#home">
+<span class="brand-icon">P<span>C</span></span>
+<span class="brand-name">PC<span>Advisor</span></span>
+</a>
+
+<p data-i18n="footerText">اختيار تقني أذكى، بميزانية تناسبك.</p>
+
+<span class="footer-copy">© <span id="currentYear">2026</span> PC Advisor</span>
+
+
+</footer>
+
+</body>
+</html>
